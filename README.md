@@ -1,4 +1,6 @@
-# Pokedex
+# Pokedex 
+![pokeball_PNG17](https://user-images.githubusercontent.com/18633105/78029372-db20a780-7336-11ea-9321-936c266392fb.png)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.5.
 
