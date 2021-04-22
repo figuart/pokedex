@@ -32,13 +32,13 @@ export class PokeapiService {
   ) { }
 
 listAll(){
-  this.http.get<PokeListResponse>(`${this.url}/pokemon?offset=0&limit=999`)
+  this.http.get<PokeListResponse>(`${this.url}/pokemon?offset=0&limit=1900`)
   .subscribe(
     response => {
       response.results.forEach(results => {
         results.number = this.getNumberFromUrl(results.url);
       })
-      this.pokeList = this.sortPokemon(response.results).filter(results => results.number < 1000)
+      this.pokeList = this.sortPokemon(response.results).filter(results => results.number < 2000)
 
       // response.pokemon.forEach(pokemon => {
       //   pokemon.number = this.getNumberFromUrl(pokemon.resource_uri);
